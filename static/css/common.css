@@ -1,0 +1,35 @@
+body {
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+}
+.app-header {
+    text-align: center;
+}
+.c-menu-header>ul {
+    padding: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 3px;
+    list-style: none;
+}
+.c-menu-header>ul>li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.c-menu-header>ul>li>a {
+    color: #34495e;
+    text-decoration: none;
+}
+.router-link-exact-active {
+    border-bottom: 3px rgb(0, 0, 0) solid;
+}
+.c-meta-qrcode {
+    border: 1px rgba(0, 0, 0, 0.07) solid;
+}
+
+/* program */
+.p-course>ul {
+    padding: 0;
+    padding-left: 20px; 
+    list-style: none;
+}
