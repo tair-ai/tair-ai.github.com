@@ -33,3 +33,22 @@ body {
     padding-left: 20px; 
     list-style: none;
 }
+
+@media screen and (max-width: 980px) {
+    html {
+        height: 100%;
+    }
+    body {
+        color: #727272;
+        font: 13px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        height: 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        padding: 10px;
+    }
+    .c-meta {
+        display: none;
+    }
+}
