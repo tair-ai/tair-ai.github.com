@@ -6,11 +6,32 @@
         text-align: center;
       }
     </style>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
   </head>
   <body>
-    <div class="content">
-        <h2>Tair.AI</h2>
-        <p>Wait for us</p>
-    </div>
+
+      <div id="app">
+            <h1>Tair.AI</h1>
+            <p>
+                <router-link to="/">About</router-link>
+                <router-link to="/program">Program</router-link>
+            </p>
+            <router-view></router-view>
+      </div>
   </body>
+  <script>
+    const Home = { template: '<div>Home</div>' }
+    const Program = { template: '<div>Program</div>' }
+    const routes = [
+            { path: '/', component: Home },
+            { path: '/program', component: Program }
+        ]
+    const router = new VueRouter({
+          routes
+    })
+    const app = new Vue({
+      router
+    }).$mount('#app')
+  </script>
 </html>
