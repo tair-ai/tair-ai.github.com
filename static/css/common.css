@@ -36,8 +36,8 @@ body {
 @media screen and (max-width: 980px) {
     body {
         color: #727272;
-        font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-        width: 80%;
+        font-size: 16px;
+        width: 95%;
         margin: auto;
         margin-top: 40px;
     }
