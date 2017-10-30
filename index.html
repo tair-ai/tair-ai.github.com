@@ -9,6 +9,9 @@
           <div class="content">
             <a href="https://github.com/tair-ai">Github</a>
           </div>
+                    <div class="c-meta">
+                      <img class="c-meta-qrcode" src="./static/img/qrcode_for_tair.jpg">
+                  </div>
       </script>
 
       <script type="text/x-template" id="program-template">
@@ -26,24 +29,25 @@
           <div class="app-header">
               <h1>Tair.AI</h1>
           </div>
-          <el-row>
+                    <div class="c-menu-header">
+                    <ul>
+                        <li><router-link to="/">About</router-link></li>
+                        <li><router-link to="/projects">Projects</router-link></li>
+                    </ul>
+                </div>
+          <!--el-row>
               <el-col :xs="0" :sm="0" :md="10" :lg="8">
                   <div class="c-meta">
                       <img class="c-meta-qrcode" src="./static/img/qrcode_for_tair.jpg">
                   </div>
               </el-col>
               <el-col :xs="24" :sm="24" :md="14" :lg="16">
-                <div class="c-menu-header">
-                    <ul>
-                        <li><router-link to="/">About</router-link></li>
-                        <li><router-link to="/projects">Projects</router-link></li>
-                    </ul>
-                </div>
+
                 <div class="c-body">
                     <router-view></router-view>
                 </div>
               </el-col>
-            </el-row>
+            </el-row-->
       </div>
   </body>
 
