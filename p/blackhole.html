@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+<style>
+</style>
+
+
+<script src="https://tair.ai/static/jquery-1.11.2.min.js""></script>
+<script src="https://tair.ai/static/numeric.js"></script>
+<script src="https://tair.ai/static/black-hole.min.js"></script>
+
+</head>
+<body>
+
+<div>
+    <div><p style="text-align:center">黑洞效果示例，致敬物理学家爱因斯坦</p></div>
+    <div id="blackhole"><div id="canvas_placeholder"></div></div>
+</div>
+
+<script>
+var corsOkImageUrl = 'https://tair.ai/static/timg.jpeg';
+BlackHole.blackHoleifyImage('canvas_placeholder', corsOkImageUrl)
+</script>
+
+<script type="text/javascript">
+$(function(){
+// this will get the full URL at the address bar
+var url = window.location.href;
+// passes on every "a" tag
+$("#header-menu a").each(function() {
+if(url == (this.href)) {
+$(this).closest("li").addClass("active");
+}
+});
+});
+</script>
+</body>
+</html>
+
